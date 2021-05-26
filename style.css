@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
 }
@@ -13,19 +13,191 @@ header {
   line-height: 70px;
 }
 
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.header-group {
+  display: flex;
+  justify-content: space-between;
+}
+
 .logo {
-  width: 130px;
+  height: 70px;
 }
 
 .nav {
-  list-style: none;
   line-height: 70px;
   display: flex;
-  justify-content: flex-end;
+  margin-left: auto;
+  list-style: none;
 }
 
 .nav-list {
   font-size: 16px;
-  color: #fafafa;
   margin: 0 30px;
+}
+
+.no-color-change {
+  color: #fafafa;
+  text-decoration: none;
+}
+
+.main-visual {
+  background-image: url(img/mv.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 650px;
+  padding: 200px;
+}
+
+.main-visual-content {
+  height: 650px; /*親の高さに揃える*/
+  color: #fafafa;
+  text-align: center;
+}
+
+.main-visual-title {
+  font-size: 64px;
+  margin-bottom: 10px;
+}
+
+.main-visual-text {
+  font-size: 20px;
+}
+
+.portfolio {
+  width: 100%;
+  background-color: #eceff1;
+}
+
+.portfolio-content {
+  width: 920px;
+  margin: 90px 0;
+}
+
+.portfolio-content-name {
+  font-size: 32px;
+  color: #000000;
+  text-align: center;
+}
+
+.portfolio-content-name::after {
+  content: "";
+  color: #ec715f;
+  width: 70px;
+  height: 3px;
+  background-color: #ec715f;
+  display: block;
+  text-align: center;
+  margin: 8px auto 0 auto;
+}
+
+.portfolio-content-text {
+  font-size: 16px;
+  color: #000000;
+  margin: 30px 0;
+  text-align: center;
+}
+
+.portfolio-content-images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.images {
+  width: 300px;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+}
+
+.img-1 {
+  background-image: url(img/sketch.jpg);
+}
+
+.img-2 {
+  background-image: url(img/websuku.png);
+  margin: 0 10px;
+}
+
+.img-3 {
+  background-image: url(img/write.jpg);
+}
+
+.img-4 {
+  background-image: url(img/webcamp.png);
+}
+
+.img-5 {
+  background-image: url(img/talk.jpg);
+  margin: 0 10px;
+}
+
+.img-6 {
+  background-image: url(img/webcamp-mother.png);
+}
+
+.top {
+  margin-top: 10px;
+}
+
+.feature {
+  width: 100%;
+}
+
+.feature-content {
+  width: 980;
+  margin: 90px 0;
+}
+
+.feature-content-name {
+  font-size: 32px;
+  color: #000000;
+  text-align: center;
+}
+
+.feature-content-name::after {
+  content: "";
+  color: #ec715f;
+  width: 70px;
+  height: 3px;
+  background-color: #ec715f;
+  display: block;
+  text-align: center;
+  margin: 8px auto 0 auto;
+}
+
+.feature-content-text {
+  font-size: 16px;
+  color: #000000;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.feature-content-boxes {
+  display: flex;
+}
+
+.box-1,
+.box-3 {
+  width: 320px;
+}
+.box-2 {
+  width: 320px;
+  margin: 0 10px;
+}
+
+.box-name {
+  font-size: 20px;
+  color: #000000;
+  text-align: center;
+}
+
+.box-text {
+  font-size: 16px;
+  color: #000000;
+  text-align: left;
 }
